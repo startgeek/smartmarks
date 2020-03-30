@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+  smartmarks:
+    image: smartmarks
+    build: .
+    environment:
+      NODE_ENV: production
+    ports:
+      - 7779:7779
+      - 7780:80
